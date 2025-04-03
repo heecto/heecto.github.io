@@ -5,37 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E</title>
     <style>
-        body {
-            background-color: whitesmoke;
-        }
-        div p{
-            text-decoration: none; text-align: center; color:whitesmoke; font-family: arial; width: 500px; margin: auto;
-        } 
-        div p:hover{
-            background-color: darkslategrey;
-        }
-        h1 {
-            text-align: center; text-shadow: 2px 2px 5px grey;
-        }
-        img {
-            margin-left: auto; margin-right:auto; ; display:block
-        }
-        .c {
-            text-align: center; background-color: whitesmoke; width:100px; height:50px; margin:auto; color:whitesmoke;
-        }
-        .c:hover {
-            background-color:white; color:lightgrey;
-        }
-        .ca {
-            text-decoration: none;
+        body {background-color: whitesmoke;}
+        div p{text-decoration: none; text-align: center; color:whitesmoke; font-family: arial; width: 500px; margin: auto;} 
+        div p:hover{background-color: darkslategrey;}
+        img {margin-left: auto; margin-right:auto; display:block}
+        .c {text-align: center; background-color: whitesmoke; width:100px; height:50px; margin:auto; color:whitesmoke;}
+        .c:hover {background-color:white; color:lightgrey;}
+        .ca {text-decoration: none;}
+        .button {border: none; color: white; padding: 16px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; transition-duration: 0.4s; cursor: pointer;}
+        .button1 {background-color: whitesmoke; border: 2px solid darkcyan; color: black}
+        .button1:hover {background-color:darkcyan; color: whitesmoke}
+        ul {list-style-type: none; margin: 0; padding: 1px}
+        li a {display: block;}
+        .header {text-shadow: 2px 2px 5px grey; padding:20px; text-align: center; animation-name: text; animation-duration: 3s; animation-iteration-count: infinite;}
+        @keyframes text {
+            0%{color:blue}
+            25%{color:green}
+            50%{color:yellowgreen}
+            75%{color:red}
+            100%{color:blue}
         }
     </style>
 </head>
 <body>
-    <h1>Website</h1>
+    <h1 class="header">Website</h1>
     <img src="New folder/7dn942.webp" alt="spinning cat">
+    <button class="button button1" type="button" onclick="alert('Cat')">Click The Button If You Like The Cat</button>
     <a class="ca" target="_blank" href="https://orteil.dashnet.org/cookieclicker/"><div class="c">Cookies</div></a>
-    <a href="table.html">2025 Semester 1 Subjects</a>
+    <ul>
+        <li><a href="table.html">2025 Semester 1 Subjects</a></li>
+        <li><a href="Transform.html">Wierd Shit Here</a></li>
+        <li><a href="myphical.html">Some Pictures of Gryphons</a></li>
+    </ul>
     <div>
         <p>Hi</p>
         <p>How long did it take you to find this?</p>
