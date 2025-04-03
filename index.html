@@ -29,6 +29,22 @@
         .div {width: 100px; height: 100px; background: darkcyan; transition: width 2s, height 2s, transform 2s;}
         #div {transition-timing-function: ease-in-out;}
         .div:hover {width: 300px; height: 300px; transform: rotate(180deg)}
+
+        .container {
+        text-align: center;
+        }
+        .BOX {
+        width: 300px;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .BOX:focus {
+        border-color:cornflowerblue;
+        box-shadow: 0 0 5px cornflowerblue;
+        outline: none;
+        }
     </style>
 </head>
 <body>
@@ -41,10 +57,13 @@
         <li><a href="Transform.html">Wierd Shit Here</a></li>
         <li><a href="myphical.html">Some Pictures of Gryphons</a></li>
     </ul>
-    <div>
-        <p>Hi</p>
-        <p>How long did it take you to find this?</p>
+    <div class="container">
+        <input type="text" id="BOX" class="BOX" placeholder="Put Your Time Here...">
     </div>
+    <p>q</p>
+    <p>q</p>
+    <p>q</p>
+    <p>q</p>
     <div class="div"></div>
     <p>q</p>
     <p>q</p>
@@ -53,6 +72,10 @@
     <p>q</p>
     <p>q</p>
     <p>q</p>
+    <div>
+        <p>Hi</p>
+        <p>How long did it take you to find this?</p>
+    </div>
     <p>q</p>
     <p>q</p>
     <p>q</p>
