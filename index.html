@@ -25,6 +25,9 @@
             75%{color:red}
             100%{color:blue}
         }
+        .div {width: 100px; height: 100px; background: darkcyan; transition: width 2s, height 2s, transform 2s;}
+        #div {transition-timing-function: ease-in-out;}
+        .div:hover {width: 300px; height: 300px; transform: rotate(180deg)}
     </style>
 </head>
 <body>
@@ -41,5 +44,6 @@
         <p>Hi</p>
         <p>How long did it take you to find this?</p>
     </div>
+    <div class="div"></div>
 </body>
 </html>
