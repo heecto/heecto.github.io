@@ -5,21 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pickles</title>
     <style>
-        h1 {text-align: center;}
-        .fixed {height: 100px; width: 100px; border: solid orangered; position: fixed; bottom: 0; right: 0}
-        .img1 {margin-left: auto; margin-right: auto; display: block}
+        * {box-sizing: border-box;}
+        body {
+            background-color: whitesmoke; 
+            margin: 0;
+        }
+        .invis {
+            color:whitesmoke;
+        }
+        .Center {
+            text-align: center;
+        }
+        .fixed {
+            height: 100px;
+            width: 100px;
+            border: solid orangered;
+            position: fixed;
+            bottom: 0;
+            right: 0
+        } 
+        .column {
+            float: left;
+            padding: 10px;
+        }
+        .column.side {
+            width: 25%;
+        }
+        .column.main {
+            width: 50%;
+        }
+        .column.main1 {
+            width: 60%;
+        }
+        .column.side1 {
+            width: 40%;
+        }
+        .column.main2 {
+            width: 30%;
+        }
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .Snek {
+            display: block;
+            margin-left: auto;
+            height: 300px;
+            width: 480px;
+        }
+        .fowest {
+            display: block;
+            margin-right: auto;
+            height: 300px;
+            width: 400px;
+        }
+        .fowest1 {
+            display: block;
+            margin-right: auto;
+            height: 300px;
+            width: 445px;
+            float: left;
+        }
+        @media screen and (max-width: 600px) {
+            .column.side, .column.main {
+                width: 100%;
+            }
+        }
+        .header {text-shadow: 2px 2px 5px grey; padding:20px; text-align: center; animation-name: text; animation-duration: 3s; animation-iteration-count: infinite;}
+        @keyframes text {
+            0%{color: darkgreen}
+            25%{color:green}
+            50%{color:yellowgreen}
+            75%{color:brown}
+            100%{color:darkgreen}
+        }
     </style>
 </head>
 <body>
-    <h1>Coastal Carpet Pythons (especially Mr. Pickles)</h1>
-    <p>text1</p>
-    <p>text1</p>
-    <p>text1</p>
-    <p>text1</p>
-    <p>text1</p>
-    <img class="img1" src="New folder/7dn942.webp" alt="Mr. Pickles">
-    
+    <h1 class="Center header">Coastal Carpet Pythons</h1>
+    <div class="everything">
+        <div class="row">
+            <div class="column main1">
+                <h3><h2 class="Center">Apperance</h2>Coastal Carpet Pythons (Morelia Spilota Mcdowelli) is a large heavy-bodied snake that can grow to weigh 10kg and be as log as 3 meters in length, the average length of this snake is around 2.1 meters long (the longest recorded length was 4 meters). Adult Coastal Carpet Pythons are usually olive-green in colour and juveniles are ussually found in shades of brown. They are marked by pale and dark edged blotches, stripes or cross-bands and have a cream belly.<p></p></h3>
+            </div>
+            <div class="column side1">
+                <img class="Snek" src="New folder/IMG_4569_Coastal_Carpet_Loop - Copy (2).gif" title="Wide Boi">Baby Coastal Carpet Python
+            </div>
+        </div>
+        <div class="row">
+            <div class="column side2">
+                <img class="fowest" src="New folder/R.jfif" title="Fowest">A Rainforest
+            </div>
+            <div class="column main2">
+                <h3><h2 class="Center" title="I Cant Find That Much Info. Soz">Habitat</h2>Coastal Carpet Pythons normally frequent forest areas near water but also settle in rainforests, wet/dry fucalyptus forests, heathland, pastures and well-settled suburban/urban areas around Queensland and New South Wales</p></h3>
+            </div>
+            <div class="column side2">
+                <img class="fowest1" src="New folder/euc_dry_forest_regrowth_wielangta_PP.jpg" title="Fowest">
+            </div>
+        </div>
+        <p class="invis">q</p>
+        <h3>consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</h3>
+    </div>
     <div class="fixed">hahahhahahahhahhaa</div>
-
+    <a href="index.html">Home</a>
 </body>
 </html>

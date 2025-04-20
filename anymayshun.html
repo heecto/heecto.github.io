@@ -5,29 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+        div {
+            border: 2px solid grey;
+            margin: 10px;
+            padding: 5px;
+            width: 100px;
+            height: 50px;
+        }
+        .divOne {transition-timing-function: ease-in-out; background-color: blueviolet; transition: width 2s, height 2s, transform 3s;}
+        .divOne:hover {width: 300px; height: 300px; transform: rotate(253deg); background-color: chartreuse;}
+        .divTwo {}
+        .divFive {background-color: blue; animation-name: move; animation-duration: 4s; animation-iteration-count: infinite; position: relative;}
+        @keyframes move {
+            0% {left: 0px; top: 0px; background-color: blue;}
+            25% {left: 0px; top: 200px; background-color: green;}
+            50% {left: 200px; top: 200px; background-color: yellow;}
+            75% {left: 200px; top: 0px; background-color: red;}
+            100% {left: 0px; top: 0px; background-color: blue;}
+        }
     </style>
 </head>
 <body>
-    <div>
-        <div class="d1">
-            <p>This Is A Div Tag that will do stuff if you hover your mouse over it</p>
-        </div>
-        <div class="d2">
-            a
-        </div>
-        <div class="d3">
-            a
-        </div>
-        <div>
-            a            
-        </div>
-        <div>
-            a            
-        </div>
-        <div>
-            a
-        </div>
-    </div>
+    <div class="divOne">
+        <p>Div #1</p>
+     </div> 
+     <div class="divTwo">
+        <p>Div #2</p>
+     </div> 
+     <div class="divThree">
+        <p>Div #3</p>
+     </div> 
+     <div class="divFour">
+        <p>Div #4</p>
+     </div> 
+     <div class="divFive">
+        <p>Div #5</p>
+     </div> 
 </body>
 </html>
