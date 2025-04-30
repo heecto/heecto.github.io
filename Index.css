@@ -33,25 +33,28 @@ img {
     color:lightgrey;
 }
 .button {
+    display: inline-block;
     border: none;
-    color: white;
-    padding: 16px 32px;
+    color: whitesmoke;
+    padding: 15px 25px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
+    outline: none;
+    background-color: #04AA6D;
+    font-size: 24px;
+    transition-duration: 0.5s;
     cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
 }
-.button1 {
-    background-color: whitesmoke;
-    border: 2px solid darkcyan;
-    color: black}
-.button1:hover {
-    background-color:darkcyan;
-    color: whitesmoke;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+.button:hover {
+    background-color: #3e8e41;
+}
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 ul {
     list-style-type: none;
