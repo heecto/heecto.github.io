@@ -1,0 +1,11 @@
+body {
+    background-color: whitesmoke;
+    align-items: center;
+}
+#div {
+    border: solid 1px darkgray;
+    background: lightslategray;
+    width: 400px;
+    height: 150px;
+    text-align: center;
+}

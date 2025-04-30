@@ -4,23 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            background-color: whitesmoke;
-            align-items: center;
-        }
-        #div {
-            border: solid 1px darkgray;
-            background: lightslategray;
-            width: 400px;
-            height: 150px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="javascript.css">
 </head>
 <body>
-    <button onclick="document.getElementById('div').style.display=''">Reappear</button>
-    <button onclick="document.getElementById('div').style.display='none'">Disappear</button>
+    <button onclick="Appear()">Reappear</button>
+    <button onclick="Disappear()">Disappear</button>
     <div id="div">I am a Div</div>
+    <script src="DisAppear.js"></script>
 </body>
 </html>
