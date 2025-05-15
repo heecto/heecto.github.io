@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #guessOutput {
+            border: 1px solid black;
+            background-color: whitesmoke;
+            padding: 10px;
+            width: 150px;
+            height: 100;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="resetButton()">
+    <input id="guessInput">
+    <button onclick="makeGuess()">Guess</button>
+    <button onclick="resetButton()">Reset</button>
+    <div id="guessOutput"></div>
+    <script src="RandomNumber.js"></script>
+</body>
+</html>
